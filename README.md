@@ -6,18 +6,37 @@
 Установили Oracle linux
 Установили гостевые дополнения по инструкции: 
 [инструкция для VBoxGA.docx](https://github.com/user-attachments/files/18921020/VBoxGA.docx)
-После выполнения команды 
+Далее выполняем команды
 `sudo yum install wget` 
-![image](https://github.com/user-attachments/assets/9b87d416-9efa-4116-a878-b65e6ced6951)
+![image](https://github.com/user-attachments/assets/417f85d3-2a1c-4f9e-9280-b7c0e27d61a2)
+Далее вводим команду для установки утилиты
+`sudo yum install curl`
+![image](https://github.com/user-attachments/assets/fa9e539b-01f3-4b15-800c-f7ee97abd34b)
 
-![image](https://github.com/user-attachments/assets/38e6f283-81eb-4fbe-ae40-ce4db37768f8)
 
-После всех этих операций снова вводим команду: sudo yum install wget А затем, чтобы проверить успешность загрузки, используйте команду: wget --version.
-![image](https://github.com/user-attachments/assets/2a449c25-5b48-4ed3-927a-5bbdf1fe5a65)
-![image](https://github.com/user-attachments/assets/b1ca344b-67c2-4ab0-82cc-7da1564d584b)
-![image](https://github.com/user-attachments/assets/9f5c8ae8-9a69-430e-8ae7-7dd5c261df6d)
-![image](https://github.com/user-attachments/assets/9827964d-95a8-4b71-9cf8-5e66d454db08)
-![image](https://github.com/user-attachments/assets/edc7c8a1-ed5a-4991-8ea4-d3b64fa3839e)
+Далее скачиваем репозиторий
+`sudo wget -P /etc/yum.repos.d/ https://download.docker.com/linux/centos/docker-ce.repo`
+![image](https://github.com/user-attachments/assets/696bb008-dfe3-48e8-aa6a-ccc71beafc14)
+устанавливаем docker
+`sudo yum install docker-ce docker-ce-cli containerd.io`
+![image](https://github.com/user-attachments/assets/6971313d-55f8-4d21-8665-7b90fc06590f)
+Запускаем и разрешаем автозапуск
+`sudo systemctl enable docker --now`
+![image](https://github.com/user-attachments/assets/6d53d112-b3a4-4849-a365-c9434deba32e)
+Получаем номер последней версии Docker Compose и сохраняем его в переменную COMVER
+`COMVER=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d\" -f4)`
+![image](https://github.com/user-attachments/assets/50d00f7d-ae97-433d-8448-dd24cbf7e65d)
+
+скачиваем скрипт 
+`sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose`
+![image](https://github.com/user-attachments/assets/facf9656-2d25-4fce-ab52-ce5bb666b556)
+
+предоставляем права на выполнение Docker Compose
+`sudo chmod +x /usr/bin/docker-compose`
+![image](https://github.com/user-attachments/assets/8572a382-945a-40a5-8466-d5427867ddd4)
+
+проверяем версью Docker
+![image](https://github.com/user-attachments/assets/d8941e15-b384-46b1-9031-205272b9a6fb)
 
 скачиваем скрипт докера:
 ![image](https://github.com/user-attachments/assets/c7c03e41-1ee4-4845-af98-c2748b440ac7)
