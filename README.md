@@ -96,7 +96,8 @@
 `sudo vi prometheus.yaml`
 и меняем там /mnt/common_volume/swarm/grafana/config/prometheus.yaml -  на exporter:9100
 
-
+Далее переходим на работу с Grafana
+переходим на сайт localhost:3000. - Пользователь и пароль: admin. - Код графаны 1816. - Код прометеуса: http://prometheus:9090.
 
 
 
