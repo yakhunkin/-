@@ -112,6 +112,7 @@
 Далее создаем визуализацию
 
 ![image](https://github.com/user-attachments/assets/3a1c545e-dd4f-4b31-9104-4b01e0021932)
+
  нажимаем на данную кнопку 
  
  ![image](https://github.com/user-attachments/assets/88612c4f-0d78-48ec-bd28-501260fd0d36)
