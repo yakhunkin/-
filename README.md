@@ -45,6 +45,7 @@
 Выдает ошибку вводим команду и со всем соглашаемся 
 `sudo yum install git-core`
 после снова вводим команду выше
+
 ![image](https://github.com/user-attachments/assets/55908990-5fff-4313-82d9-4bf2f00a3170)
 
 переходим в другую папку
