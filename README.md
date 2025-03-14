@@ -50,6 +50,7 @@
 
 переходим в другую папку
 `cd grafana_stack_for_docker`
+
 ![image](https://github.com/user-attachments/assets/28d6c339-3150-4d78-b5de-13e942fce7b1)
 
 создаем новый дерикторий
@@ -91,6 +92,7 @@
 для того чтобы внести изменения нажимаем на клавиатуре insert
 для того чтобы сохранить нажимаем Esc и вводим wp!
 вводим `node-exporter` после слова `services`
+
 ![image](https://github.com/user-attachments/assets/381b43d5-bf2b-4986-a461-510eacd1e419)
 
 открываем файл prometheus.yaml
@@ -111,6 +113,7 @@
 
 ![image](https://github.com/user-attachments/assets/3a1c545e-dd4f-4b31-9104-4b01e0021932)
  нажимаем на данную кнопку 
+ 
  ![image](https://github.com/user-attachments/assets/88612c4f-0d78-48ec-bd28-501260fd0d36)
 
  из предоставленного меню выбираем Prometheus
@@ -133,6 +136,7 @@
 ![image](https://github.com/user-attachments/assets/167d4d85-c661-4a78-a389-a11474759266)
 
 далее выбираем import
+
 ![image](https://github.com/user-attachments/assets/16f0b5c2-882f-4871-be5a-0bae49f5d6eb)
 
 далее видим результат
