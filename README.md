@@ -99,6 +99,49 @@
 Далее переходим на работу с Grafana
 переходим на сайт localhost:3000. - Пользователь и пароль: admin. - Код графаны 1816. - Код прометеуса: http://prometheus:9090.
 
+![image](https://github.com/user-attachments/assets/d29cf7a6-17e6-4dec-8ec9-4bab9042a95a)
+
+
+Создаем новый Dashboard
+
+![image](https://github.com/user-attachments/assets/a6ca9283-f832-4a36-9f20-2d70c4e97e04)
+
+Далее создаем визуализацию
+
+![image](https://github.com/user-attachments/assets/3a1c545e-dd4f-4b31-9104-4b01e0021932)
+ нажимаем на данную кнопку 
+ ![image](https://github.com/user-attachments/assets/88612c4f-0d78-48ec-bd28-501260fd0d36)
+
+ из предоставленного меню выбираем Prometheus
+ ![image](https://github.com/user-attachments/assets/16011d77-5f71-4432-81b9-831c8fe6c8ec)
+
+ вставляем код прометеуса
+ ![image](https://github.com/user-attachments/assets/c77c799a-54a0-4a1f-938d-ed9a357bcdca)
+
+ в разделе authentication меняем `No authentication` на `basic authentication`
+ 
+![image](https://github.com/user-attachments/assets/d06d4bb1-31b7-4134-96da-1ad69f3f585f)
+
+сохраняем и смотри все ли хорошо 
+![image](https://github.com/user-attachments/assets/967a704c-572d-42ae-b128-5ae825ec659b)
+
+возвращаемся на пару шагов назад и нажимаем вместо `Add visualisation`   `import`
+
+и вводим 
+
+![image](https://github.com/user-attachments/assets/167d4d85-c661-4a78-a389-a11474759266)
+
+далее выбираем import
+![image](https://github.com/user-attachments/assets/16f0b5c2-882f-4871-be5a-0bae49f5d6eb)
+
+далее видим результат
+![image](https://github.com/user-attachments/assets/71caad82-8c2a-4a70-bfda-97dc409024ad)
+
+
+
+
+
+
 
 
 
