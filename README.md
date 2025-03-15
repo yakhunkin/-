@@ -147,18 +147,45 @@
 
 
 Далее пойдет работа с Victoria Metrics
-Для начала необходимо изменить файл `docker-compose.yaml`
-для этого переходим в каталог `grafana_stack_for_docker`
-вводим команду `cd grafana_stack_for_docker`
+переходим на сайт `localhosr:8428`
 
-![image](https://github.com/user-attachments/assets/dde82ff9-3895-4ff0-8704-8660fbe7280d)
+![image](https://github.com/user-attachments/assets/1a2a669f-19bc-4d7c-baa1-2281c5b9b5a6)
 
-далее открываем файл 
-`sudo vi docker compose.yaml`
+также переходим на сайт `localhost:9090`
 
+![image](https://github.com/user-attachments/assets/481b3131-1dec-46dc-9a1a-5a2f43c49755)
 
 
+Victoria Metrics создаем также как и Prometheus только меняем URl на `http://victoriametrics:8428` и ставим `No autentification`
 
+![image](https://github.com/user-attachments/assets/7f13072f-8373-413f-822c-8275cc5dfc28)
+
+далее возращаемся на пару шагов назад и выбираем имя которое мы указали 
+
+![image](https://github.com/user-attachments/assets/1ca6607d-2557-4b24-97ea-12b47e194658)
+
+выбираем и смоотрим результат
+
+![image](https://github.com/user-attachments/assets/469260d2-07b6-45a7-b1fe-c64cd9bb6d27)
+
+далее вводим команду `echo -e "# TYPE light_metric1 gauge\nlight_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus
+`
+
+![image](https://github.com/user-attachments/assets/81704c11-6cdc-4155-a333-3c7407fc29b3)
+
+
+Потом переходим на Victoria metrics и выбираем ``vmui
+
+![image](https://github.com/user-attachments/assets/5723cc83-d324-4085-948c-4c4974d39eb9)
+
+
+вводим в строку `light_metric1` 
+
+![image](https://github.com/user-attachments/assets/4f4c19ba-a38e-45ae-bb80-1921533a6be5)
+
+Видим результат
+
+![image](https://github.com/user-attachments/assets/f65623fb-ee19-4ac7-9caf-3205dda5e9b9)
 
 
 
