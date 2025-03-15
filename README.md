@@ -1,6 +1,8 @@
 Яхункин К-ИСП 39-1 
 Лабораторная работа
 
+![image](https://github.com/user-attachments/assets/c04e333d-d7cf-47dd-b5c8-1c774e8843d1)
+
 
 
 Установили Oracle linux
@@ -144,6 +146,15 @@
 ![image](https://github.com/user-attachments/assets/71caad82-8c2a-4a70-bfda-97dc409024ad)
 
 
+Далее пойдет работа с Victoria Metrics
+Для начала необходимо изменить файл `docker-compose.yaml`
+для этого переходим в каталог `grafana_stack_for_docker`
+вводим команду `cd grafana_stack_for_docker`
+
+![image](https://github.com/user-attachments/assets/dde82ff9-3895-4ff0-8704-8660fbe7280d)
+
+далее открываем файл 
+`sudo vi docker compose.yaml`
 
 
 
