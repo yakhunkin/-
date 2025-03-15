@@ -188,7 +188,7 @@ Victoria Metrics создаем также как и Prometheus только м�
 ![image](https://github.com/user-attachments/assets/f65623fb-ee19-4ac7-9caf-3205dda5e9b9)
 
 
-переходим обратно в grafana и вставляем в строку `light_metric1`
+переходим обратно в grafana и вставляем в строку `light_metric1` и нажимаем `Run queries`
 
 ![image](https://github.com/user-attachments/assets/10f79e80-fd9a-4765-a473-4d604fcfb786)
 
