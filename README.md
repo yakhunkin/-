@@ -193,9 +193,14 @@ Victoria Metrics создаем также как и Prometheus только м�
 ![image](https://github.com/user-attachments/assets/10f79e80-fd9a-4765-a473-4d604fcfb786)
 
 
+Далее воздаем ноую виртуал для дальнейших работ.
+Устанавливаем гостевые дополнения и вводим все те же команды `sudo yum install wget`
 
+![image](https://github.com/user-attachments/assets/aea957c3-e827-4761-a8a0-02fd475ba8f2)
 
+`sudo yum install curl`
 
+![image](https://github.com/user-attachments/assets/22f36be4-5b52-46d8-b973-6a80d798d3e6)
 
 
 
