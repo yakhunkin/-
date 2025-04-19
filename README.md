@@ -219,9 +219,58 @@ Victoria Metrics создаем также как и Prometheus только м�
 
 ![image](https://github.com/user-attachments/assets/ddc6c4ca-f57e-4dc2-ac23-0d53cae5a2c7)
 
+![image](https://github.com/user-attachments/assets/ca4f7562-9f35-4b2d-93a5-56946d8b389c)
+
+![image](https://github.com/user-attachments/assets/62b5adc8-1c67-457d-bbcc-ab927efacb2f)
+
+прверяем отключилось команда должна повится строка `SELINUX=disabled`
+![image](https://github.com/user-attachments/assets/b9e5df9f-b102-4fba-bf3a-ef3be3364d95)
+
+УСТАНОВКА PROMETHEUS 3.3.0
+загружаем прометеус
+1. скачиваем нужную версию `wget https://github.com/prometheus/prometheus/releases/download/v3.3.0/prometheus-3.3.0.linux-amd64.tar.gz`
+![image](https://github.com/user-attachments/assets/7102b203-1317-4735-b222-c70176b3cc22)
+
+2. Распаковываем архив `tar xvf prometheus-3.3.0.linux-amd64.tar.gz`
+
+![image](https://github.com/user-attachments/assets/48e6c0d0-a521-476a-860b-81ad5411a478)
+
+3. переносим файлы `cd prometheus-3.3.0.linux-amd64`
+`sudo mv prometheus prometheus.yml /usr/local/bin/`
+
+![image](https://github.com/user-attachments/assets/2e846a72-124a-4bc5-8833-e03a31c02902)
+
+4. создаем пользователя `sudo useradd --no-create-home --shell /bin/false prometheus`
+
+   ![image](https://github.com/user-attachments/assets/d04c295b-a0a4-44ad-9243-89e7077d115c)
+
+5. создаем дериктории `sudo mkdir /etc/prometheus
+sudo mkdir /var/lib/prometheus`
+![image](https://github.com/user-attachments/assets/dcd95d97-57fc-4894-b834-019f373fd6a9)
+
+6. Копирование конфигурационных файлов `sudo mv prometheus.yml /etc/prometheus/`
+   ![image](https://github.com/user-attachments/assets/ec7df122-62d4-48ac-a859-09032488e17c)
 
 
+7. Установка прав доступа
+`sudo chown prometheus:prometheus /etc/prometheus/prometheus.yml`
+`sudo chown -R prometheus:prometheus /var/lib/prometheus`
+   ![image](https://github.com/user-attachments/assets/c92bbe4c-becc-4a9d-8b58-30472e29a351)
+   
+8. Создание службы systemd
+   `sudo nano /etc/systemd/system/prometheus.service`
+   вносим изменения в файл
+   ![image](https://github.com/user-attachments/assets/9dd50fd7-4be4-475d-83c7-f75348609287)
+   
+9. Запуск и включение службы
+`sudo systemctl daemon-reload`
+`sudo systemctl start prometheus`
+`sudo systemctl enable prometheus`
 
+![image](https://github.com/user-attachments/assets/af210a10-fa55-4542-9198-de43125ba871)
+
+ 11. Теперь вы можете получить доступ к веб-интерфейсу Prometheus, открыв в браузере `http://<ваш_IP>:9090`
+Замените <ваш_IP> на IP-адрес вашего сервера.
 
 
 
