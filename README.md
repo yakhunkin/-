@@ -202,10 +202,22 @@ Victoria Metrics создаем также как и Prometheus только м�
 
 ![image](https://github.com/user-attachments/assets/22f36be4-5b52-46d8-b973-6a80d798d3e6)
 
+вводим команду `git clone https://github.com/skl256/grafana_stack_for_docker.git`
+
+![image](https://github.com/user-attachments/assets/1fb700fb-c4dd-4b1f-b7c5-e556603dab96)
+
+устанавливаем tar `sudo yum install tar`
+
+![image](https://github.com/user-attachments/assets/e907a390-1a0d-44f3-b7ce-f0dc76dd74e4)
 
 
+![image](https://github.com/user-attachments/assets/20ec0c97-82fb-4bd7-99fb-1d8ac3b4e584)
 
+![image](https://github.com/user-attachments/assets/fb4574f5-f74a-4e9b-87c9-b2eb97398de9)
 
+![image](https://github.com/user-attachments/assets/1bd978c4-4c22-4dc1-a367-64a7dbfaeedf)
+
+![image](https://github.com/user-attachments/assets/ddc6c4ca-f57e-4dc2-ac23-0d53cae5a2c7)
 
 
 
