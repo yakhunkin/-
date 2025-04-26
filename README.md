@@ -231,6 +231,60 @@ Victoria Metrics создаем также как и Prometheus только м�
 1. скачиваем нужную версию `wget https://github.com/prometheus/prometheus/releases/download/v3.3.0/prometheus-3.3.0.linux-amd64.tar.gz`
 ![image](https://github.com/user-attachments/assets/7102b203-1317-4735-b222-c70176b3cc22)
 
+2. создаем новые каталоги `mkdir /etc/prometheus` `mkdir /var/lib/prometheus`
+
+![image](https://github.com/user-attachments/assets/628df2ae-5e18-42e8-b70b-5b6ed4f34eaf)
+
+3. распоковываем архив ` tar -zxf prometheus-*.linux-amd64.tar.gz`
+
+ ![image](https://github.com/user-attachments/assets/7088a9e2-379a-4e3d-b250-f6427284a589)
+ 
+4. переходим в папку `cd prometheus-*.linux-amd64`
+
+![image](https://github.com/user-attachments/assets/b14c1755-8082-4c47-b216-faa41d968eee)
+
+5. проверка коректности `pwd`
+
+  ![image](https://github.com/user-attachments/assets/7730bea5-f7bd-4fa8-8d50-02d9328e0849)
+
+6. Раскидаем по папкам системы файлы прометеуса `cp prometheus promtool /usr/local/bin/` `cp prometheus.yml /etc/prometheus` 
+
+   ![image](https://github.com/user-attachments/assets/87815bb7-89d3-4fc7-bcbe-565a78fd386e)
+![image](https://github.com/user-attachments/assets/1dfa4c5d-cbb4-4a1b-82f0-bd2203dfac37)
+
+7. выходим на каталог выше и чистим за собой файлы ` cd .. && rm -rf prometheus-*.linux-amd64/ && rm -f prometheus-*.linux-amd64.tar.gz`
+
+![image](https://github.com/user-attachments/assets/96582128-2150-4068-870f-10d44df1fe1c)
+
+ 8. повторяем команду `pwd`
+
+![image](https://github.com/user-attachments/assets/a5042cc4-6b2c-4c74-9b75-e2ee6dbf73a3)
+
+9. `ls -l`
+
+![image](https://github.com/user-attachments/assets/a13c370e-f7ce-4043-a726-b7b0d24c0687)
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 2. Распаковываем архив `tar xvf prometheus-3.3.0.linux-amd64.tar.gz`
 
 ![image](https://github.com/user-attachments/assets/48e6c0d0-a521-476a-860b-81ad5411a478)
